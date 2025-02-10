@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sergio Vironche</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #333;
+        }
+
+        /* Estilo para el encabezado */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 3em;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        h2 {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 2.2em;
+            margin-top: 15px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        h4 {
+            text-align: center;
+            color: #3498db;
+            font-size: 1.5em;
+            margin-top: 10px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #e67e22;
+        }
+
+        /* Estilo para la imagen */
+        img {
+            display: block;
+            margin: 25px auto;
+            border-radius: 50%;
+            border: 5px solid #34495e;
+            transform: scale(0);
+            animation: scaleIn 1.5s forwards 1.5s;
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 18px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            color: #ecf0f1;
+        }
+
+        /* Estilo para el contenido */
+        .content {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin-top: 60px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+        }
+
+        /* Estilo para el separador horizontal */
+        hr {
+            border: 0;
+            border-top: 2px solid #dcdcdc;
+            margin: 30px 0;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -100px;
+            }
+            100% {
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html">Main Page</a>
+        <a href="indexV.html">Main</a>
+        <a href="About MeV.html">About Me</a>
+        <a href="ProjectsV.html">Projects</a>
+        <a href="EducationV.html">Education</a>
+        <a href="Contact MeV.html">Contact Me</a>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <h1>Sergio Vironche</h1>
+        <img src="yo.jpeg" width="200" height="200" alt="Sergio Vironche">
+        <h2>Summary</h2>
+        <p>My name is Sergio Alejandro Vironche Alvarezam from Mexico, I was born in Tepic, Nayarit on September 12, 2005. I am a student at the Polytechnic University of the State of Nayarit. I am a calm, responsible, and focused person to carry out my work or responsibilities with the highest possible quality.</p>
+        <hr>
+    </div>
+
+</body>
+</html>
+

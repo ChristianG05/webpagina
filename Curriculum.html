@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rios Villegas Christian Gabriel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInSlide 1s ease-in-out forwards;
+        }
+        @keyframes fadeInSlide {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .nav {
+            background: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #4CAF50;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .image-placeholder {
+            grid-column: span 2;
+            width: 100%;
+            height: 300px;
+            background: url('https://source.unsplash.com/800x300/?panda') center/cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        .content {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">Rios Villegas Christian Gabriel</div>
+    <div class="nav">
+        <a href="index.html">Main Page</a>
+        <a href="indexC.html">Main</a>
+        <a href="About me.html">About me</a>
+        <a href="Curriculum.html">Curriculum</a>
+        <a href="Projects.html">Projects</a>
+        <a href="Contact.html">Contact</a>
+    </div>
+    <div class="container">
+        <div class="image-placeholder"></div>
+        <div class="content" id="inicio">
+            <h2>Summary</h2>
+            <p>I am a person dedicated to his work. I graduated from high school with a degree in physics, <br>
+                I learn quickly. I have experience in architecture.</p>
+        </div>
+        <div class="content" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>High school Republica de Chile</li>
+                <li>Mathematical Physicist - Colegio de Estudios Cientificos y Tecnologicos del Estado de Nayarit</li>
+                <li>Software engineering - </li>
+            </ul>
+        </div>
+        <div class="content" id="alimentacion">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><h3>Construction Assistant</h3></li>
+                <p>Jan 2025</p>
+                    <ul>
+                        <li>Block placement in house construction.</li>
+                        <li>Armex assembly for house foundations.</li>      
+                    </ul>
+                <li><h3>Assistant in creating budgets and generators</h3></li>
+                <p>April 2024</p>
+                    <ul>
+                        <li>Budget review and error correction.</li>
+                        <li>Creating generators for construction clients</li>
+                    </ul>
+            </ul>
+        </div>
+        <div class="content" id="conservacion">
+            <h2>Skills</h2>
+            <ul>
+                <li>I know Autocad</li>
+                <li>Python</li>
+                <li>Construction skills</li>
+            </ul>
+        </div>
+        <div class="content" id="contacto">
+            <h2>Awards and Certifications</h2>
+            <ul>
+                <li>Cisco Certification</li>
+                <li>Award: Completion of construction of a complete house (April 2023)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

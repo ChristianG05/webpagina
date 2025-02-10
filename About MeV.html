@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #333;
+        }
+
+        /* Estilo para el encabezado */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 3em;
+            margin-top: 30px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 20px;
+            padding: 0 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 0.5s;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+        }
+
+        ul li {
+            margin: 10px 0;
+            color: #34495e;
+        }
+
+        h4 {
+            text-align: center;
+            color: #3498db;
+            font-size: 1.5em;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1.5s;
+        }
+
+        /* Estilo del menú de navegación */
+        nav {
+            background-color: #34495e;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 999;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 18px 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+            color: #ecf0f1;
+        }
+
+        /* Estilo para el contenido */
+        .content {
+            padding: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            margin-top: 60px;
+            opacity: 0;
+            animation: fadeIn 1s forwards 1s;
+        }
+
+        /* Estilo para el separador horizontal */
+        hr {
+            border: 0;
+            border-top: 2px solid #dcdcdc;
+            margin: 30px 0;
+        }
+
+        /* Animaciones */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            0% {
+                top: -100px;
+            }
+            100% {
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <nav>
+        <a href="index.html">Main Page</a>
+        <a href="indexV.html">Main</a>
+        <a href="About MeV.html">About Me</a>
+        <a href="ProjectsV.html">Projects</a>
+        <a href="EducationV.html">Education</a>
+        <a href="Contact MeV.html">Contact Me</a>
+    </nav>
+
+    <!-- Contenido de la página -->
+    <div class="content">
+        <h1>About Me</h1>
+        <p>In reality, I am a serious and not very social person, which is why I don't have many friends, but the ones I do have are my best friends.<br>
+            Below are some of my hobbies and things I like:</p>
+        <ul>
+            <li>Play videogames</li>
+            <li>Camp</li>
+            <li>Motorcycles</li>
+            <li>Swim</li>
+            <li>Listen to music</li>
+            <li>Spend time with my friends</li>
+            <li>Nature</li>
+        </ul>
+        <hr>
+    </div>
+
+</body>
+</html>
